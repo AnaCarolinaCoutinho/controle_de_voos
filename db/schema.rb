@@ -13,12 +13,13 @@
 ActiveRecord::Schema.define(version: 2021_12_11_132129) do
 
   create_table "articles", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "id_orig"
     t.string "title"
     t.string "url"
-    t.boolean "featured"
     t.string "imageUrl"
     t.string "newsSite"
-    t.text "summary"
+    t.bigint "summary"
+    t.boolean "featured"
     t.string "publishedAt"
     t.string "updatedAt"
     t.datetime "created_at", precision: 6, null: false
@@ -26,17 +27,21 @@ ActiveRecord::Schema.define(version: 2021_12_11_132129) do
   end
 
   create_table "events", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.bigint "article_id"
+    t.bigint "article_id", null: false
     t.string "provider"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["article_id"], name: "index_events_on_article_id"
   end
 
   create_table "launches", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.bigint "article_id"
+    t.bigint "article_id", null: false
     t.string "provider"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["article_id"], name: "index_launches_on_article_id"
   end
 
+  add_foreign_key "events", "articles"
+  add_foreign_key "launches", "articles"
 end

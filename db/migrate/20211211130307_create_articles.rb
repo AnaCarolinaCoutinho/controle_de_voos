@@ -6,7 +6,7 @@ class CreateArticles < ActiveRecord::Migration[6.1]
       t.string :url
       t.string :imageUrl
       t.string :newsSite
-      t.string :summary
+      t.bigint :summary
       t.boolean :featured
       t.string :publishedAt
       t.string :updatedAt

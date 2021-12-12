@@ -1,4 +1,4 @@
-namespace :jobs do
+namespace :job do
     
   desc "Popular banco de dados"
   task popular_banco: :environment do

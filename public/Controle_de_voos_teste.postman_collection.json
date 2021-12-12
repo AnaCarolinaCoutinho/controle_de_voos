@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "3b94599e-295e-49b5-94c1-e5c02f994ed7",
+		"name": "Controle_de_voos_teste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar_todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/articles",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar_um",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/articles/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"articles",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar_artigo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_orig",
+							"value": "123659",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "teste",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "www.nhxsdvbciyvsd.com.br",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"value": "vdfvdvdfv",
+							"type": "text"
+						},
+						{
+							"key": "newsSite",
+							"value": "vdfvfdsv",
+							"type": "text"
+						},
+						{
+							"key": "summary",
+							"value": "vdfvdv",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/articles",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar_artigo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_orig",
+							"value": "777777",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "teste2",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "www.nhxsdvbciyvsd.com.br",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"value": "vdfvdvdfv",
+							"type": "text"
+						},
+						{
+							"key": "newsSite",
+							"value": "aaaaaaaaaaaaa",
+							"type": "text"
+						},
+						{
+							"key": "summary",
+							"value": "bbbbbbbb",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/articles/12",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"articles",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar_artigo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id_orig",
+							"value": "777777",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "teste2",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "www.nhxsdvbciyvsd.com.br",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"value": "vdfvdvdfv",
+							"type": "text"
+						},
+						{
+							"key": "newsSite",
+							"value": "aaaaaaaaaaaaa",
+							"type": "text"
+						},
+						{
+							"key": "summary",
+							"value": "bbbbbbbb",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/articles/11",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"articles",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
