@@ -30,4 +30,6 @@ Desenvolvimento
 
     Criação do arquivo jobs.rake com script para popular as tabelas com os dados oriundos da API original do Space Flight News
 
+    Link da aplicação no Heroku: https://controledevoos.herokuapp.com/api/v1/
+
     Link do video da apresentação:
