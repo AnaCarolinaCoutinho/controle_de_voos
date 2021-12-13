@@ -2,7 +2,7 @@
 
 Este projeto desenvolvido por Ana Coutinho baseado na API do Space Flight News. Aqui podemos listar os principais artigos sobre voos espaciais.
 
-This is a challenge by Coodesh
+This is a challenge by [Coodesh](https://coodesh.com/)
 
 
 Tecnologias utilizadas neste projeto
