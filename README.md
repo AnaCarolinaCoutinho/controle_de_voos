@@ -32,4 +32,4 @@ Desenvolvimento
 
     Link da aplicação no Heroku: https://controledevoos.herokuapp.com/api/v1/
 
-    Link do video da apresentação:
+    Link do video da apresentação: https://www.loom.com/share/90d437fd06904e3dadbd6811ef12abfc
